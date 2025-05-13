@@ -22,12 +22,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: github-actions-dotnet-webapp/github4women
+      working-directory: github4women
 
     - name: Build
       run: dotnet build --no-restore
-      working-directory: github-actions-dotnet-webapp/github4women
+      working-directory: github4women
 
     - name: Run tests
       run: dotnet test
-      working-directory: github-actions-dotnet-webapp/github4women
+      working-directory: github4women
