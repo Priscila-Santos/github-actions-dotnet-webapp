@@ -22,12 +22,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: <correct/path/to/your/project>
+      working-directory: src
 
     - name: Build
       run: dotnet build --no-restore
-      working-directory: <correct/path/to/your/project>
+      working-directory: src
 
     - name: Run tests
       run: dotnet test
-      working-directory: <correct/path/to/your/project>
+      working-directory: src
